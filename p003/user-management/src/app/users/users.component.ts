@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { USERS } from '../mock-users';
 import { User } from '../user';
 
 @Component({
@@ -7,11 +8,13 @@ import { User } from '../user';
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit {
-  user:User ={
-    id: 1,
-    name: '老卫'
-  };
+  users = USERS;
 
+  selectedUser: User = {id:1,name:'123'};
+
+  onSelect(user:User):void{
+    this.selectedUser = user;
+  }
   constructor() { }
 
   ngOnInit(): void {
