@@ -12,11 +12,11 @@ export class UsersComponent implements OnInit {
   // users = USERS;
   users: User[] | undefined;
 
-  selectedUser: User = {id:1,name:'123'};
+  // selectedUser: User = {id:1,name:'123'};
 
-  onSelect(user:User):void{
-    this.selectedUser = user;
-  }
+  // onSelect(user:User):void{
+  //   this.selectedUser = user;
+  // }
 
   getUsers():void{
     this.userService.getUsers().subscribe(users => this.users = users);
