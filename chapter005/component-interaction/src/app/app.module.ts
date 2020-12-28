@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 
 import { UserParentComponent } from './user-parent.component';
 import { UserChildComponent } from './user-child.component';
+import { NameChildComponent } from './name-child.component';
+import { NameParentComponent } from './name-parent.component';
 
 let directives:any[] = [
   AppComponent,
   UserChildComponent,
-  UserParentComponent
+  UserParentComponent,
+  NameChildComponent,
+  NameParentComponent
 ];
 
 @NgModule({
