@@ -15,6 +15,8 @@ import { VotorTakerComponent } from './votortaker.component';
 import { CountdownTimerComponent } from './countdown-timer.component';
 import { CountdownLocalVarParentComponent} from './countdown-parent.component';
 import { CountdownViewParentComponent } from './countdown-parent-view.component';
+import { AstronautComponent } from './astronaut.component';
+import { MissionControlComponent } from './missioncontrol.component';
 
 let directives:any[] = [
   AppComponent,
@@ -29,6 +31,8 @@ let directives:any[] = [
   CountdownLocalVarParentComponent,
   CountdownTimerComponent,
   CountdownViewParentComponent,
+  AstronautComponent,
+  MissionControlComponent
 ];
 
 @NgModule({
