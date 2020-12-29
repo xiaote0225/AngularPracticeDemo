@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, ViewChild } from "@angular/core";
+import { CountdownTimerComponent } from "./countdown-timer.component";
 
 @Component({
   selector:'app-countdown-parent-lv',

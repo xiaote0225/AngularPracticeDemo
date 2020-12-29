@@ -13,7 +13,8 @@ import { VersionParentComponent } from './version-parent.component';
 import { VotorComponent } from './votor.component';
 import { VotorTakerComponent } from './votortaker.component';
 import { CountdownTimerComponent } from './countdown-timer.component';
-import { CountdownLocalVarParentComponent } from './countdown-parent.component';
+import { CountdownLocalVarParentComponent} from './countdown-parent.component';
+import { CountdownViewParentComponent } from './countdown-parent-view.component';
 
 let directives:any[] = [
   AppComponent,
@@ -26,7 +27,8 @@ let directives:any[] = [
   VotorTakerComponent,
   VotorComponent,
   CountdownLocalVarParentComponent,
-  CountdownTimerComponent
+  CountdownTimerComponent,
+  CountdownViewParentComponent,
 ];
 
 @NgModule({
