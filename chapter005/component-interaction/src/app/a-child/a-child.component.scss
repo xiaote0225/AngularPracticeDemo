@@ -1,0 +1,11 @@
+:host(.active){
+  p{
+    color: green;
+  }
+}
+
+:host-context(.largeFont){
+  p{
+    font-size: 50px;
+  }
+}
