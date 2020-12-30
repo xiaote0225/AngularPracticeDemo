@@ -6,7 +6,8 @@ import { USERS } from "./user";
     template:`
         <h2>{{master}}有{{users.length}}个学生</h2>
         <app-user-child *ngFor="let user of users" [user]="user" [masterName]="master"></app-user-child>
-    `
+    `,
+    styles:['h2{color:red;}']
 })
 export class UserParentComponent{
     users = USERS;
