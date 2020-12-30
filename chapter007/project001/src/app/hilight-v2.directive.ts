@@ -7,10 +7,12 @@ export class HilightV2Directive {
 
   constructor(private el:ElementRef) { }
 
+  @Input() defaultColor:string | undefined;
+
   @Input('appHilightV2') highlightColor:string | undefined;
 
   @HostListener('mouseenter') onMouseEnter(){
-    this.highlight(this.highlightColor || 'red');
+    this.highlight(this.highlightColor || this.defaultColor || 'red');
   }
 
   @HostListener('mouseleave') onMouseLeave(){
