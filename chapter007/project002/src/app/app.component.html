@@ -1,0 +1,25 @@
+<h2 *ngIf="true">了解Ngif指令-true</h2>
+<h2 *ngIf="false">了解Ngif指令-false</h2>
+<hr>
+<div [ngSwitch]='str'>
+  <h2 *ngSwitchCase="'1'">1</h2>
+  <h2 *ngSwitchCase="'2'">2</h2>
+  <h2 *ngSwitchCase="'3'">3</h2>
+  <h2 *ngSwitchDefault>default</h2>
+</div>
+<hr>
+<div *ngFor="let user of users">{{user}}</div>
+<hr>
+<p>Hip!</p>
+<ng-template>
+  <p>Hip!</p>
+</ng-template>
+<p>Hooray!</p>
+<hr>
+<p>
+  I turned the corner
+  <ng-container *ngIf="containerFlag">
+    and saw {{containerFlag}}. I waved
+  </ng-container>
+  and continued on my way.
+</p>
