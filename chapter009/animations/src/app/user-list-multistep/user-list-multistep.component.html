@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let user of users" (@flyInOut.start)="animationStarted($event)" (@flyInOut.done)="animationDone($event)" [@flyInOut]="'in'">
+    {{user.name}}
+  </li>
+</ul>

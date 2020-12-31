@@ -12,3 +12,7 @@
 <h2>动画时间线</h2>
 <app-user-list-timings [users]="users"></app-user-list-timings>
 <button [disabled]="!userService.canRemove()" (click)="userService.remove()">移除</button>
+<hr>
+<h2>基于关键帧的多阶段动画</h2>
+<app-user-list-multistep [users]="users"></app-user-list-multistep>
+<button [disabled]="!userService.canAdd()" (click)="userService.remove()">移除</button>
