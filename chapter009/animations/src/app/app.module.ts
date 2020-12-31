@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserListBasicComponent } from './user-list-basic/user-list-basic.component';
 import { UserService } from './user.service';
+import { UserListEnterLeaveComponent } from './user-list-enter-leave/user-list-enter-leave.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserListBasicComponent
+    UserListBasicComponent,
+    UserListEnterLeaveComponent
   ],
   imports: [
     BrowserModule,

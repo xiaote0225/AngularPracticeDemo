@@ -10,7 +10,7 @@ import { User, UserService } from './user.service';
 export class AppComponent {
   title = 'animations';
   users:User[];
-  constructor(private userService:UserService){
+  constructor(public userService:UserService){
     this.users = userService.getAllUsers();
   }
 }

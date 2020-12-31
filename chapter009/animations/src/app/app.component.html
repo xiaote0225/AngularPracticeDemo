@@ -1,1 +1,6 @@
+<h2>基本动画</h2>
 <app-user-list-basic [users]="users"></app-user-list-basic>
+<hr>
+<h2>进场与离场</h2>
+<app-user-list-enter-leave [users]="users"></app-user-list-enter-leave>
+<button [disabled]="!userService.canRemove()" (click)="userService.remove()">移除</button>
