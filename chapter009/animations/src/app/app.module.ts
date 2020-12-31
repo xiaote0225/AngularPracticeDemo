@@ -10,6 +10,7 @@ import { UserListEnterLeaveComponent } from './user-list-enter-leave/user-list-e
 import { UserListAutoComponent } from './user-list-auto/user-list-auto.component';
 import { UserListTimingsComponent } from './user-list-timings/user-list-timings.component';
 import { UserListMultistepComponent } from './user-list-multistep/user-list-multistep.component';
+import { UserListGroupsComponent } from './user-list-groups/user-list-groups.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UserListMultistepComponent } from './user-list-multistep/user-list-mult
     UserListEnterLeaveComponent,
     UserListAutoComponent,
     UserListTimingsComponent,
-    UserListMultistepComponent
+    UserListMultistepComponent,
+    UserListGroupsComponent
   ],
   imports: [
     BrowserModule,
