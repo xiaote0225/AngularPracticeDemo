@@ -1,11 +1,14 @@
 <div class="container">
   <h1>用户表单</h1>
   {{diagnostic}}
-  <form #userForm="ngForm">
+  <form #userForm="ngForm" (ngSubmit)="onSubmit()">
 
     <div class="form-group">
       <label for="name">姓名</label>
-      <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name">
+      <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel">
+      <div [hidden]="name.valid || name.pristine">
+        姓名不能为空
+      </div>
     </div>
 
     <div class="form-group">
@@ -20,7 +23,9 @@
       </select>
     </div>
 
-    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="submit" class="btn btn-success" [disabled]="!userForm.form.valid">Submit</button>
+
+    <button type="button" class="btn btn-default" (click)="newUser();userForm.reset()">新增用户</button>
 
   </form>
 </div>

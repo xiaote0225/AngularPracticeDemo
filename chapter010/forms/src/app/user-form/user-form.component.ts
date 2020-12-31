@@ -13,6 +13,10 @@ export class UserFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  newUser(){
+    this.model = new User(1,'','');
+  }
+
   jobs = ['工程师','医生','教师'];
 
   model = new User(1,'柳伟卫',this.jobs[0],32);
@@ -20,6 +24,7 @@ export class UserFormComponent implements OnInit {
   submitted = false;
 
   onSubmit(){
+    console.log('onSubmit......');
     this.submitted = true;
   }
 
