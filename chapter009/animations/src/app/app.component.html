@@ -4,3 +4,7 @@
 <h2>进场与离场</h2>
 <app-user-list-enter-leave [users]="users"></app-user-list-enter-leave>
 <button [disabled]="!userService.canRemove()" (click)="userService.remove()">移除</button>
+<hr>
+<h2>自动属性值计算</h2>
+<app-user-list-auto [users]="users"></app-user-list-auto>
+<button [disabled]="!userService.canAdd()" (click)="userService.remove()">移除</button>
