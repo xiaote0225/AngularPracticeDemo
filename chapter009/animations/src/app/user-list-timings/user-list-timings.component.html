@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let user of users" [@flyInOut]="'in'" (click)="user.toggleState()">
+    {{user.name}}
+  </li>
+</ul>

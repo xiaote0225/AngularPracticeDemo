@@ -8,13 +8,15 @@ import { UserListBasicComponent } from './user-list-basic/user-list-basic.compon
 import { UserService } from './user.service';
 import { UserListEnterLeaveComponent } from './user-list-enter-leave/user-list-enter-leave.component';
 import { UserListAutoComponent } from './user-list-auto/user-list-auto.component';
+import { UserListTimingsComponent } from './user-list-timings/user-list-timings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListBasicComponent,
     UserListEnterLeaveComponent,
-    UserListAutoComponent
+    UserListAutoComponent,
+    UserListTimingsComponent
   ],
   imports: [
     BrowserModule,
