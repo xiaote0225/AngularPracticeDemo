@@ -4,10 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AirQualityComponent } from './air-quality/air-quality.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AirQualityComponent
   ],
   imports: [
     BrowserModule,
