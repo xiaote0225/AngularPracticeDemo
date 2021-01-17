@@ -11,4 +11,8 @@ export class AppComponent {
   constructor(private translateService:TranslateService){
     translateService.setDefaultLang('en'); //设置默认语言
   }
+  //使用语言
+  useLanguage(language:string){
+    this.translateService.use(language);
+  }
 }
