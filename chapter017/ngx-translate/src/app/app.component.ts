@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngx-translate';
+  //注入TranslateService服务
+  constructor(private translateService:TranslateService){
+    translateService.setDefaultLang('en'); //设置默认语言
+  }
 }
