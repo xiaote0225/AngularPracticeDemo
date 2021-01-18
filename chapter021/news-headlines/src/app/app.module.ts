@@ -4,10 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavigateComponent } from './navigate/navigate.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavigateComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
