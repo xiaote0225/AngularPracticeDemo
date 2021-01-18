@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "news-headlines"
+    }
+  },
+  "defaultProject": "news-headlines",
+  "cli": {
+    "analytics": "b9f63e38-7dd3-482e-99e1-9d7f90cf04de"
+  }
 }
