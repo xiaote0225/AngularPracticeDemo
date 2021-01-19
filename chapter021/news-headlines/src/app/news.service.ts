@@ -13,8 +13,8 @@ export class NewsService {
    */
   newsApiUrl = 'http://v.juhe.cn/toutiao/index?type=';
   alias = 'top'; // 默认值top,获取全部的新闻列表数据
-  key = '&key=c8e67bcabe16ec3abbf58e026d1a1a48';
-  // key = '&key=d95eb2c02b12e841bafb5a49d20924be';
+  // key = '&key=c8e67bcabe16ec3abbf58e026d1a1a48';
+  key = '&key=d95eb2c02b12e841bafb5a49d20924be';
   /**
    * 通过事件方式来实现组件间通信
    */
