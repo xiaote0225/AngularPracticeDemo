@@ -16,10 +16,17 @@ export class NewsComponent implements OnInit {
   /**
    * 调用接口获取新闻信息列表
    */
-  showNewsData(): void{
+  showNewsData(): void {
     this.newsService.getNewsData().subscribe(
       (newsApiData: NewsMsg) => this.news = newsApiData.result.data
     );
+  }
+  /**
+   * 接收选中的tab事件
+   * @param alias 选中的tab别名
+   */
+  tabSelected(alias: string): void {
+    this.newsService.setAlias(alias);
   }
 
   /**
@@ -33,6 +40,14 @@ export class NewsComponent implements OnInit {
    */
   ngOnInit(): void {
     this.showNewsData();
+
+    // 监听新闻分类切换的事件
+    this.newsService.tabSelected.subscribe(
+      alias => {
+        this.tabSelected(alias);
+        this.showNewsData();
+      }
+    );
   }
 
 }
